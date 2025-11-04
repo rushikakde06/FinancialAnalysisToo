@@ -72,7 +72,7 @@ export default function App() {
     <div className="flex flex-col h-screen bg-gray-100">
       <Header />
       <div className="flex flex-1 overflow-hidden">
-        <section className="w-full md:w-1/ overflow-hidden flex flex-col">
+        <section className="w-full md:w-1/2 overflow-hidden flex flex-col">
           <PdfViewer
             pdfUrl={pdfUrl}
             pagesMeta={pagesMeta}

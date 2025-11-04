@@ -1,16 +1,59 @@
-# React + Vite
+# Maersk Q2 2025 Financial Analysis Tool  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What You See  
+| Left Panel | Right Panel |
+|-----------|------------|
+| Full 25-page Maersk PDF | Exact analysis text with clickable **[1][2][3]** |
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features  
+- Official Maersk header (Q2 2025 + “ALL THE WAY”)  
+- Pixel-perfect yellow highlight using **PDF.js text layer**  
+- Smooth scroll to Page 15  
+- Works **every single click** (canvas cleared each time)  
+- Mobile-first (stacks on phone)  
+- Zero file picker – PDF baked in  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack  
+
+React 18 + Vite
+PDF.js → canvas rendering + text coordinates
+Tailwind CSS → header & responsive layout
+
+## Folder Structure
+
+maersk-q2-2025/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   │   ├── MaerskQ22025InterimReport.pdf
+│   │   ├── maersk-logo.svg
+│   │   ├── header.png
+│   │   ├── case-study.png
+│   │   ├── split-screen.png
+│   │   ├── contents.png
+│   │   └── highlight.gif
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── PdfViewer.jsx
+│   │   └── Sidebar.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+└── README.md   ← you are here
+
+## How to Run
+
+git clone https://github.com/rushikakde06/FinancialAnalysisToo.git
+cd maersk-q2-2025
+npm install && npm run dev
