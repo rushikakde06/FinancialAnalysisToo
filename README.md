@@ -33,12 +33,6 @@ maersk-q2-2025/
 ├── src/
 │   ├── assets/
 │   │   ├── MaerskQ22025InterimReport.pdf
-│   │   ├── maersk-logo.svg
-│   │   ├── header.png
-│   │   ├── case-study.png
-│   │   ├── split-screen.png
-│   │   ├── contents.png
-│   │   └── highlight.gif
 │   ├── components/
 │   │   ├── Header.jsx
 │   │   ├── PdfViewer.jsx
